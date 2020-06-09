@@ -40,21 +40,27 @@
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(551, 330);
+            this.buttonClose.BackColor = System.Drawing.Color.Red;
+            this.buttonClose.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold);
+            this.buttonClose.Location = new System.Drawing.Point(809, 325);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(138, 45);
             this.buttonClose.TabIndex = 7;
             this.buttonClose.Text = "Закрыть";
-            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // buttonOrder
             // 
-            this.buttonOrder.Location = new System.Drawing.Point(397, 330);
+            this.buttonOrder.BackColor = System.Drawing.Color.Lime;
+            this.buttonOrder.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold);
+            this.buttonOrder.Location = new System.Drawing.Point(655, 325);
             this.buttonOrder.Name = "buttonOrder";
             this.buttonOrder.Size = new System.Drawing.Size(138, 45);
             this.buttonOrder.TabIndex = 6;
             this.buttonOrder.Text = "Заказать";
-            this.buttonOrder.UseVisualStyleBackColor = true;
+            this.buttonOrder.UseVisualStyleBackColor = false;
+            this.buttonOrder.Click += new System.EventHandler(this.buttonOrder_Click);
             // 
             // listViewItemsPer
             // 
@@ -68,10 +74,10 @@
             this.listViewItemsPer.HideSelection = false;
             this.listViewItemsPer.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1});
-            this.listViewItemsPer.Location = new System.Drawing.Point(12, 17);
+            this.listViewItemsPer.Location = new System.Drawing.Point(12, 12);
             this.listViewItemsPer.MultiSelect = false;
             this.listViewItemsPer.Name = "listViewItemsPer";
-            this.listViewItemsPer.Size = new System.Drawing.Size(678, 307);
+            this.listViewItemsPer.Size = new System.Drawing.Size(935, 307);
             this.listViewItemsPer.TabIndex = 5;
             this.listViewItemsPer.UseCompatibleStateImageBehavior = false;
             this.listViewItemsPer.View = System.Windows.Forms.View.Details;
@@ -80,12 +86,12 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Название";
-            this.columnHeader1.Width = 134;
+            this.columnHeader1.Width = 175;
             // 
             // columnHeader2
             // 
             this.columnHeader2.Text = "Описание";
-            this.columnHeader2.Width = 375;
+            this.columnHeader2.Width = 584;
             // 
             // columnHeader3
             // 
@@ -101,13 +107,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 393);
+            this.ClientSize = new System.Drawing.Size(959, 393);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonOrder);
             this.Controls.Add(this.listViewItemsPer);
             this.Name = "FormPer";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormPer";
+            this.Text = "Переферия";
             this.ResumeLayout(false);
 
         }

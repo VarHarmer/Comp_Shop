@@ -21,14 +21,14 @@ namespace Comp_Shop
         void ShowItem()
         {
             listViewItemsDet.Items.Clear();
-            foreach (ItemDet items in Program.shopdb.ItemDet)
+            foreach (ItemDet itemsDet in Program.shopdb.ItemDet)
             {
                 ListViewItem item = new ListViewItem(new string[]
                 {
-                    items.Name, items.Desk,
-                    items.Pres, items.Price
+                    itemsDet.Name, itemsDet.Desk,
+                    itemsDet.Pres, itemsDet.Price
                 });
-                item.Tag = items;
+                item.Tag = itemsDet;
                 listViewItemsDet.Items.Add(item);
             }
         }
@@ -40,12 +40,12 @@ namespace Comp_Shop
 
         private void buttonOrder_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Спасибо за заказ! Вам скоро перезвонят для уточнения деталей.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void buttonClose_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }

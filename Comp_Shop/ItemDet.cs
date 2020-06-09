@@ -19,7 +19,7 @@ namespace Comp_Shop
         public string Desk { get; set; }
         public string Pres { get; set; }
         public string Price { get; set; }
-        public int IdUsers { get; set; }
+        public Nullable<int> IdUsers { get; set; }
     
         public virtual Users Users { get; set; }
     }

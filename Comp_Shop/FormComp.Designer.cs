@@ -50,10 +50,10 @@
             this.listViewItems.HideSelection = false;
             this.listViewItems.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem3});
-            this.listViewItems.Location = new System.Drawing.Point(12, 20);
+            this.listViewItems.Location = new System.Drawing.Point(12, 12);
             this.listViewItems.MultiSelect = false;
             this.listViewItems.Name = "listViewItems";
-            this.listViewItems.Size = new System.Drawing.Size(678, 307);
+            this.listViewItems.Size = new System.Drawing.Size(935, 307);
             this.listViewItems.TabIndex = 0;
             this.listViewItems.UseCompatibleStateImageBehavior = false;
             this.listViewItems.View = System.Windows.Forms.View.Details;
@@ -67,7 +67,7 @@
             // columnHeader2
             // 
             this.columnHeader2.Text = "Описание";
-            this.columnHeader2.Width = 375;
+            this.columnHeader2.Width = 626;
             // 
             // columnHeader3
             // 
@@ -81,27 +81,33 @@
             // 
             // buttonOrder
             // 
-            this.buttonOrder.Location = new System.Drawing.Point(398, 333);
+            this.buttonOrder.BackColor = System.Drawing.Color.Lime;
+            this.buttonOrder.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonOrder.Location = new System.Drawing.Point(655, 325);
             this.buttonOrder.Name = "buttonOrder";
             this.buttonOrder.Size = new System.Drawing.Size(138, 45);
             this.buttonOrder.TabIndex = 1;
             this.buttonOrder.Text = "Заказать";
-            this.buttonOrder.UseVisualStyleBackColor = true;
+            this.buttonOrder.UseVisualStyleBackColor = false;
+            this.buttonOrder.Click += new System.EventHandler(this.buttonOrder_Click);
             // 
             // buttonClose
             // 
-            this.buttonClose.Location = new System.Drawing.Point(552, 333);
+            this.buttonClose.BackColor = System.Drawing.Color.Red;
+            this.buttonClose.Font = new System.Drawing.Font("Roboto Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonClose.Location = new System.Drawing.Point(809, 325);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(138, 45);
             this.buttonClose.TabIndex = 2;
             this.buttonClose.Text = "Закрыть";
-            this.buttonClose.UseVisualStyleBackColor = true;
+            this.buttonClose.UseVisualStyleBackColor = false;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // FormComp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 393);
+            this.ClientSize = new System.Drawing.Size(959, 393);
             this.Controls.Add(this.buttonClose);
             this.Controls.Add(this.buttonOrder);
             this.Controls.Add(this.listViewItems);

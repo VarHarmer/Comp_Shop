@@ -36,5 +36,15 @@ namespace Comp_Shop
                 listViewItems.Items.Add(item);
             }
         }
+
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void buttonOrder_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Спасибо за заказ! Вам скоро перезвонят для уточнения деталей.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
